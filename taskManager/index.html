@@ -17,7 +17,38 @@
 </head>
 
 <body>
-    <h1>starter</h1>
+    <main>
+        <div class="task-form">
+            <h3>task manager</h3>
+            <form class="form1">
+                <input type="text" name="name" class="input" placeholder="e.g. wash dishes">
+                <button type="submit" class="btn task-btn">submit</button>
+            </form>
+            <span class="form-alert text-small">there was an error</span>
+        </div>
+        <span id="loading">loading...</span>
+        <div class="task-list">
+            <div class="task">
+                <div class="task-info">
+                    <h4>task name</h4>
+                </div>
+                <div class="task-icons">
+                    <a href="task.html" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash trash"></i></a>
+                </div>
+            </div>
+            <div class="task">
+                <div class="task-info">
+                    <!-- <i class="fa-regular fa-circle-check"></i> -->
+                    <h4>task name</h4>
+                </div>
+                <div class="task-icons">
+                    <a href="task.html" class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash trash"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

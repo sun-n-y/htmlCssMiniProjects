@@ -267,3 +267,139 @@ ul {
     margin: 0 auto;
     margin-top: -1rem;
 }
+
+/* task manager */
+
+main {
+    height: 100vh;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px 2fr;
+    justify-content: flex-start;
+}
+
+.task-form {
+    align-self: center;
+    width: 100%;
+    height: 75%;
+    background-color: var(--white);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+    padding: 2rem;
+}
+
+.task-form h3 {
+    text-align: center;
+}
+
+.input {
+    background-color: var(--backgroundColor);
+    border: none;
+    width: 100%;
+    padding: .375rem .5rem;
+    border-radius: var(--borderRadius);
+    border: 1px solid var(--grey-200);
+}
+
+.task-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width:576px) {
+    .form1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .input {
+        width: 75%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .task-btn {
+        margin-top: 0;
+        width: 25%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 100%;
+    }
+
+    .task-form {
+        height: 65%;
+    }
+}
+
+#loading {
+    text-transform: capitalize;
+}
+
+.task-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 70px);
+    row-gap: 1rem;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1rem 2rem 1rem 4rem;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+    transition: var(--transition);
+}
+
+.task:hover {
+    box-shadow: var(--shadow-4);
+}
+
+
+.task h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+.task-icons .edit-link {
+    margin-right: 1rem;
+    color: var(--green-dark);
+}
+
+.task-icons .trash {
+    color: var(--red-dark);
+}
+
+/* edit task form */
+.edit-task-form {
+    height: auto;
+    margin-top: 5rem;
+}
+
+.form2 h4 {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.id-input {
+    border: none;
+}
+
+#checkbox {
+    width: 70%;
+}
+
+.edit-btn {
+    width: 100%;
+}
+
+.edit-task-form span {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
