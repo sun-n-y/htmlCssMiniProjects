@@ -267,3 +267,44 @@ ul {
     margin: 0 auto;
     margin-top: -1rem;
 }
+
+/* start of color flipper */
+
+
+.navbar {
+    box-shadow: var(--shadow-2);
+    height: 5rem;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.navbar ul {
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li a {
+    margin-right: 2rem;
+    color: var(--black);
+    transition: var(--transition);
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-500);
+}
+
+
+
+.navbar h3 {
+    color: var(--primary-500);
+    margin: 0;
+    letter-spacing: var(--letterSpacing);
+    font-weight: bold;
+}
