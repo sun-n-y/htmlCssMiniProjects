@@ -270,7 +270,7 @@ ul {
 
 /* start of color flipper */
 
-
+/* navbar */
 .navbar {
     box-shadow: var(--shadow-2);
     height: 5rem;
@@ -307,4 +307,49 @@ ul {
     margin: 0;
     letter-spacing: var(--letterSpacing);
     font-weight: bold;
+}
+
+/* hero */
+.hero {
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-title {
+    padding: 1rem .5rem;
+    margin: 2.5rem 0;
+    background-color: var(--black);
+    border-radius: var(--borderRadius);
+    color: var(--white);
+}
+
+.hero-title h1 {
+    margin: 0;
+    letter-spacing: 7px;
+    font-weight: bold;
+}
+
+.hero-title span {
+    color: var(--primary-500);
+}
+
+.herobtn {
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: #f8fafc;
+    border: 2px solid var(--black);
+    color: var(--black);
+    font-weight: bold;
+}
+
+.herobtn:hover {
+    color: var(--white);
+    background-color: var(--black);
 }
