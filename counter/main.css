@@ -267,3 +267,37 @@ ul {
     margin: 0 auto;
     margin-top: -1rem;
 }
+
+/* counter  */
+
+main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.counter h1:nth-of-type(2) {
+    font-size: 7rem;
+}
+
+.counter-btn {
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--black);
+    color: var(--black);
+    text-transform: uppercase;
+    margin: 0 .5rem;
+}
+
+.counter-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
