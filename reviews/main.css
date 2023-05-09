@@ -267,3 +267,102 @@ ul {
     margin: 0 auto;
     margin-top: -1rem;
 }
+
+/* review  */
+.title {
+    margin: 6rem 0;
+}
+
+.card {
+    background-color: var(--white);
+    width: 90%;
+    max-width: var(--fixed-width);
+    margin: 0 auto;
+    transition: var(--transition);
+    box-shadow: var(--shadow-2);
+    text-align: center;
+    padding: 2rem;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-4);
+}
+
+.img-container {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-500);
+    border-radius: 50%;
+    top: -2%;
+    left: 6%;
+}
+
+.img-reviews {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.quote {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-500);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quote-icon {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.card h4 {
+    margin: 1rem 0;
+}
+
+.card p:first-of-type {
+    color: var(--primary-500);
+    text-transform: uppercase;
+}
+
+.card .icons {
+    margin: 1rem 0;
+    color: var(--primary-300);
+    font-size: 2rem;
+}
+
+.card .icons .icon {
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.card .icons .icon:hover {
+    color: var(--primary-500);
+}
+
+.review-btn {
+    background-color: var(--primary-100);
+    border: 2px solid var(--primary-500);
+    color: var(--primary-500);
+}
+
+.review-btn:hover {
+    background-color: var(--primary-500);
+    color: var(--black);
+}
