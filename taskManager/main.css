@@ -288,6 +288,10 @@ main {
     border-radius: var(--borderRadius);
 }
 
+.task-form h3 {
+    text-align: center;
+}
+
 .task-btn {
     margin-top: 1.5rem;
     width: 100%;
@@ -348,6 +352,7 @@ main {
 
 .task-info h5 {
     margin-bottom: 0;
+    letter-spacing: var(--letterSpacing);
 }
 
 .list {
@@ -364,4 +369,61 @@ main {
     top: 50%;
     left: 5%;
     transform: translate(-50%, -50%);
+}
+
+#special {
+    position: relative;
+}
+
+#special::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    background-color: var(--black);
+    top: 50%;
+}
+
+/* edit task */
+.form2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form-control {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.form-control h4 {
+    margin-bottom: 0;
+}
+
+.edit-form .task-btn {
+    border-radius: var(--borderRadius);
+}
+
+.edit-form span {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.backbutton {
+    width: 300px;
+    margin: 3rem auto;
+    background-color: var(--black);
+    color: var(--white);
+    padding: .75rem 0;
+}
+
+.backbutton:hover {
+    background-color: var(--grey-500);
+}
+
+.backbutton a {
+    text-decoration: none;
+    color: var(--white);
 }
