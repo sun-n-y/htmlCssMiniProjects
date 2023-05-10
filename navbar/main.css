@@ -273,6 +273,8 @@ nav {
     background: var(--white);
     box-shadow: var(--shadow-2);
     line-height: 1;
+    position: fixed;
+    width: 100%;
 }
 
 .nav-header {
@@ -382,4 +384,9 @@ nav {
     .social-icons a:hover {
         color: var(--primary-300);
     }
+}
+
+.got {
+    height: 200vh;
+    background: linear-gradient(green, blue);
 }
