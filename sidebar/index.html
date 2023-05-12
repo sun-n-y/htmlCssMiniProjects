@@ -13,11 +13,35 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- main css -->
     <link rel="stylesheet" href="./main.css">
-    <title>starter</title>
+    <title>sidebar</title>
 </head>
 
 <body>
-    <h1>starter</h1>
+    <main>
+        <button type="button" class="nav-toggle" id="nav-toggle"><i class="fa fa-bars"></i></button>
+        <!-- sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img src="./logo.svg" id="logo" alt="">
+                <button type="button" class="close-toggle" id="close-toggle"><i class="fa fa-close"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-sketch"></i></a></li>
+            </ul>
+        </aside>
+        <!-- end of sidebar -->
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>

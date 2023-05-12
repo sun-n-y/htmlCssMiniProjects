@@ -1,8 +1,12 @@
 // ********** nav toggle ************
 // select button and links
 const navBtn = document.getElementById("nav-toggle");
-const links = document.getElementById("nav-links");
+const sidebar = document.getElementById("sidebar");
+const closebtn = document.getElementById("close-toggle");
 // add event listener
 navBtn.addEventListener("click", () => {
-  links.classList.toggle("show-links");
+  sidebar.classList.toggle("show-sidebar");
+});
+closebtn.addEventListener("click", () => {
+  sidebar.classList.remove("show-sidebar");
 });
