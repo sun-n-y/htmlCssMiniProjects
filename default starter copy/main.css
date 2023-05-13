@@ -267,3 +267,111 @@ ul {
     margin: 0 auto;
     margin-top: -1rem;
 }
+
+/* grocery bud */
+.grocery-container {
+    width: 90vw;
+    max-width: var(--fixed-width);
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: var(--white);
+    padding: 1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-2);
+    border-radius: var(--borderRadius);
+}
+
+.grocery-container:hover {
+    box-shadow: var(--shadow-4);
+}
+
+.grocery-container .alert-danger {
+    text-align: center;
+    border-radius: var(--borderRadius);
+}
+
+.grocery-container .text-small {
+    margin: 0 auto;
+    padding: .5rem 0;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+}
+
+.grocery-container .title {
+    margin: 1rem 0;
+}
+
+.grocery-container .input-form {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.input-field {
+    background-color: var(--grey-100);
+    border: transparent;
+    border-radius: 0;
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+    padding: .5rem 0 .5rem .5rem;
+    border: 1px solid var(--grey-200);
+}
+
+.grocery-btn {
+    border-radius: 0;
+    border-top-right-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+}
+
+.grocery-btn p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.list-item {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .375rem 1rem;
+    transition: var(--transition);
+}
+
+.item p {
+    margin: 0;
+}
+
+.item:hover {
+    background-color: var(--grey-100);
+    border-radius: var(--borderRadius);
+}
+
+.item-icons {
+    display: flex;
+    column-gap: 1.5rem;
+    font-size: .8rem;
+    margin-right: .5rem;
+}
+
+.item-icons .edit {
+    cursor: pointer;
+    color: var(--green-dark);
+}
+
+.item-icons .trash {
+    cursor: pointer;
+    color: var(--red-dark);
+}
+
+.clear-btn {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: none;
+    color: var(--red-dark);
+}
