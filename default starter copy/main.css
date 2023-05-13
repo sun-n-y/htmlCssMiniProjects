@@ -328,7 +328,7 @@ ul {
 }
 
 .list-item {
-    margin: 2rem 0;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
@@ -374,4 +374,10 @@ ul {
     background: transparent;
     box-shadow: none;
     color: var(--red-dark);
+}
+
+.clear-btn:hover {
+    background-color: transparent;
+    color: var(--red-dark);
+    box-shadow: none;
 }

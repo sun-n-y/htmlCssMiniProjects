@@ -18,20 +18,22 @@
 
 <body>
     <article class="grocery-container">
-        <div class="alert-danger">
-            <p class="text-small">
-                please enter value
-            </p>
-        </div>
-        <div class="title">
-            <h4>grocery bud</h4>
-        </div>
-        <div class="input-form">
-            <input type="text" name="item-name" class="input-field" placeholder="e.g. eggs">
-            <button type="button" class="btn grocery-btn">
-                <p>submit</p>
-            </button>
-        </div>
+        <form action="">
+            <div class="alert-danger">
+                <p class="text-small">
+                    please enter value
+                </p>
+            </div>
+            <div class="title">
+                <h4>grocery bud</h4>
+            </div>
+            <div class="input-form">
+                <input type="text" name="item-name" class="input-field" placeholder="e.g. eggs">
+                <button type="submit" class="btn grocery-btn">
+                    <p>submit</p>
+                </button>
+            </div>
+        </form>
         <div class="list-item">
             <div class="item">
                 <p>Oranges</p>
@@ -47,8 +49,8 @@
                     <i class="fa-solid fa-trash trash"></i>
                 </div>
             </div>
+            <button type="button" class="btn clear-btn">clear items</button>
         </div>
-        <button type="button" class="btn clear-btn">clear items</button>
     </article>
 
 </body>
