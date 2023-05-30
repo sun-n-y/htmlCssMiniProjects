@@ -274,6 +274,7 @@ ul {
 .navbar {
     box-shadow: var(--shadow-2);
     height: 5rem;
+    background-color: var(--white);
 }
 
 .navbar-content {
