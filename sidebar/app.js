@@ -1,12 +1,20 @@
-// ********** nav toggle ************
-// select button and links
-const navBtn = document.getElementById("nav-toggle");
-const sidebar = document.getElementById("sidebar");
-const closebtn = document.getElementById("close-toggle");
-// add event listener
-navBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("show-sidebar");
+//target elements
+const navToggle = document.querySelector('.nav-toggle');
+const closeToggle = document.querySelector('.close-toggle');
+const sidebar = document.querySelector('#sidebar');
+
+//event listeners
+navToggle.addEventListener('click', function () {
+  sidebar.classList.toggle('show-sidebar');
 });
-closebtn.addEventListener("click", () => {
-  sidebar.classList.remove("show-sidebar");
+
+closeToggle.addEventListener('click', function () {
+  sidebar.classList.remove('show-sidebar');
+});
+
+window.addEventListener('click', function (e) {
+  if (e.target.classList == '' && sidebar.classList.contains('show-sidebar')) {
+    sidebar.classList.remove('show-sidebar');
+    console.log(e.target);
+  }
 });
