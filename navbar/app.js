@@ -1,8 +1,7 @@
-// ********** nav toggle ************
-// select button and links
-const navBtn = document.getElementById("nav-toggle");
-const links = document.getElementById("nav-links");
-// add event listener
-navBtn.addEventListener("click", () => {
-  links.classList.toggle("show-links");
+//target elements
+const navBtn = document.querySelector('#nav-toggle');
+const links = document.querySelector('#nav-links');
+
+navBtn.addEventListener('click', function () {
+  links.classList.toggle('show-links');
 });
