@@ -308,19 +308,19 @@ ul {
     border-radius: var(--borderRadius);
 }
 
-.menu-items {
+.item {
     width: 90vw;
     max-width: var(--fixed-width);
     display: grid;
     justify-content: center;
     row-gap: 2rem;
-}
 
-.item {
+
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 200px auto;
     row-gap: 2rem;
+    margin: 1rem;
 }
 
 .menu-title h4 {
