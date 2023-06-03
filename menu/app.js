@@ -84,10 +84,17 @@ const menu = [
 
 //target elements
 const sectionCenter = document.querySelector('.section-center');
+const btnContainer = document.querySelector('.buttons');
 
 //event listeners
 window.addEventListener('DOMContentLoaded', function () {
-  const menuArray = menu
+  showMenu(menu);
+  filterBtns();
+});
+
+//functions
+function showMenu(array) {
+  const menuArray = array
     .map(function (item) {
       return `<div class="item">
                     <div class="img-container">
@@ -106,4 +113,40 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     .join('');
   sectionCenter.innerHTML = menuArray;
-});
+}
+
+function filterBtns() {
+  const filterBtns = menu.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ['all']
+  );
+  const btnsArray = filterBtns
+    .map(function (item) {
+      return `<button type="button" data-id="${item}" class="btn menu-btn">${item}</button>`;
+    })
+    .join('');
+  btnContainer.innerHTML = btnsArray;
+
+  const btns = btnContainer.querySelectorAll('.menu-btn');
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      const filterValue = e.currentTarget.dataset.id;
+      const filteredArray = menu.filter(function (item) {
+        if (filterValue == item.category) {
+          return item;
+        }
+      });
+      if (filterValue == 'all') {
+        showMenu(menu);
+      } else {
+        showMenu(filteredArray);
+      }
+    });
+  });
+}
